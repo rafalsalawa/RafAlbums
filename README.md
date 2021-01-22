@@ -1,6 +1,6 @@
 # RafAlbums webservice to store Your photos
 author: Rafał Salawa,
-website is still in development - may have some issues to fix, but works overall.
+website is still in development
 
 1. Download repository.
 2. Create mysql database 'gallery' (default name, you can choose another name, but remember to change it in 'database.php' file).
