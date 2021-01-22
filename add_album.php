@@ -138,7 +138,7 @@ $(document).ready(function() {
 
 
 function name_validation(name) { 
-	var letters = /^[A-Za-z-' ]+$/;
+	var letters = /^[A-Za-z0-9-' ]+$/;
 	if(name.match(letters)) {
 		document.getElementById("nameMsg").innerHTML = "";
 		//document.getElementById("name").style.background = "#FFFFFF"; 
