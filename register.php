@@ -193,8 +193,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 							<button type="button" class="btn btn-sm btn-outline-dark" style="border-radius: 0 !important;" onclick="showPassword()"><i class="fa fa-eye" aria-hidden="true"></i> Show Password</button>
 						</div>
 						<div class="form-group">
-							<button type="submit" class="btn noborder widthfullbtn-primary" ><i class="fa fa-pencil" aria-hidden="true"></i> Sign in</button>
-							<button type="reset" class="btn noborder widthfullbtn-warning" ><i class="fa fa-times" aria-hidden="true"></i> Reset</button>
+							<button type="submit" class="btn noborder widthfull btn-primary" ><i class="fa fa-pencil" aria-hidden="true"></i> Sign in</button>
+							<button type="reset" class="btn noborder widthfull btn-warning" ><i class="fa fa-times" aria-hidden="true"></i> Reset</button>
 						</div>
 						<p>Already have an account? <a href="login.php">Login here</a>.</p>
 					</form>
