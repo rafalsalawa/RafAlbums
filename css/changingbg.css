@@ -1,0 +1,59 @@
+:root {
+	--background-opacity: 0;
+}
+
+body {
+/*
+	background-image: url('1.jpg') ; 
+*/
+	background-image: var(--background-image1);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/*
+	background-image: url('bgimages/animatedforest1.gif') ;
+	background-image: var(--background-image);
+	*/
+	/*z-index: -2 ;*/
+	background-position: center top;
+	background-repeat: no-repeat ; 
+	background-attachment: fixed ; 
+	background-size: cover; 
+	
+	min-height: 100%;
+	margin: 0;
+}
+body:after { 
+	content: "";
+/*
+	background-image: url('2.jpg') ;
+*/
+	background-image: var(--background-image2);
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	 
+	/*
+	background-image: url('bgimages/animatedforest1.gif') ;
+	background-image: var(--background-image);
+	*/
+	/*position: static; to work with Edge 10 */
+	z-index: -2 ;
+	/*	position: fixed ; */ /* MUST BE fixed OR absolute TO WORK WITH CHANGING OPACITY!!?? */
+	position: fixed;
+	background-position: center top;
+	background-repeat: no-repeat ; 
+	background-attachment: fixed ; 
+	background-size: cover ; 
+
+	min-height: 100%;
+	margin: 0;
+
+	opacity: var(--background-opacity2);	
+	transition: opacity 2000ms;
+
+}
+
