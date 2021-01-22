@@ -18,9 +18,13 @@ if($_POST['type']==1){
 		if (mysqli_query($conn, $sql)) {
 			$album_id = mysqli_insert_id($conn);
 			
+			$photos_src = "photos";
 			$album_src = "photos/$album_id";
 			$update = mysqli_query($conn,"UPDATE `albums` SET `album_src`='$album_src' WHERE `album_id`=$album_id");
 			
+			if (!file_exists($photos_src)) {
+				mkdir("$photos_src");		
+			}
 			if (!file_exists($album_src)) {
 				mkdir("$album_src");		
 			}
